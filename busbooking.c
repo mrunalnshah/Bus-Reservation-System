@@ -88,77 +88,88 @@ void busbooking(){
             if(strcmp(register_busnumber,choice_busnumber) == 0){
                 isdatetrue = date_validation(timing.day,timing.month,timing.year);
                 if(isdatetrue == 1){
-                    bus_layout(register_busnumber);
-                    strcat(filename_seats,choice_busnumber);
-                    strcat(filename_seats,".txt");
-                    strcat(database_seat,filename_seats);
-                    strcat(filename_passenger,choice_busnumber);
-                    strcat(filename_passenger,".txt");
-                    strcat(database_passenger,filename_passenger);
+                    istimetrue = time_validation(timing_hms.hour,timing_hms.minute,timing_hms.second);
+                    if(istimetrue == 1){
+                        bus_layout(register_busnumber);
+                        strcat(filename_seats,choice_busnumber);
+                        strcat(filename_seats,".txt");
+                        strcat(database_seat,filename_seats);
+                        strcat(filename_passenger,choice_busnumber);
+                        strcat(filename_passenger,".txt");
+                        strcat(database_passenger,filename_passenger);
 
-                    seatdetails = fopen(database_seat,"r");
-                    if(seatdetails != NULL){
-                        fscanf(seatdetails,"%d",&totalseats);
-                    }
-                    fclose(seatdetails);
-
-                    bookingdetails = fopen(database_passenger,"r");
-                    if(bookingdetails != NULL){
-                        while(fscanf(bookingdetails,"%d %s",&temp_passenger_seat,temp_passenger_name) == 2){
-                            array_passenger_seat[temp_passenger_seat] = temp_passenger_seat;
-                            strcpy(array_passenger_name[temp_passenger_seat],temp_passenger_name);
+                        seatdetails = fopen(database_seat,"r");
+                        if(seatdetails != NULL){
+                            fscanf(seatdetails,"%d",&totalseats);
                         }
-                    }
-                    printf("\t\tEnter Number of seats to be booked : ");
-                    scanf("%d",&number_of_seats);
+                        fclose(seatdetails);
 
-
-                    for(int i = 0; i < number_of_seats; i++){
-                        printf("\t\tPassenger [%d]\n",i+1);
-                        do{
-                            validation = 0;
-                            printf("\t\tSEAT : ");
-                            scanf("%d",&temp_seat);
-                            for(int i = 0; i < 20; i++){
-                                if(temp_seat == array_passenger_seat[i]){
-                                    printf("\t\tWe regret but the seat is not EMPTY/VACANT...\n");
-                                    validation = 1;
-                                }
+                        bookingdetails = fopen(database_passenger,"r");
+                        if(bookingdetails != NULL){
+                            while(fscanf(bookingdetails,"%d %s",&temp_passenger_seat,temp_passenger_name) == 2){
+                                array_passenger_seat[temp_passenger_seat] = temp_passenger_seat;
+                                strcpy(array_passenger_name[temp_passenger_seat],temp_passenger_name);
                             }
-                        }while(validation == 1);
-
-                        printf("\t\tNAME : ");
-                        scanf("%s",temp_name);
-
-
-                        array_passenger_seat[temp_seat] = temp_seat;
-                        strcpy(array_passenger_name[temp_seat],temp_name);
-                        totalseats = totalseats - 1;
-                    }
-                    bookingdetails = fopen(database_passenger,"w");
-                    for(int i = 0; i < 20;i++){
-                        if(array_passenger_seat[i] != NULL && array_passenger_name[i] != NULL){
-                            fprintf(bookingdetails,"%d %s\n",array_passenger_seat[i],array_passenger_name[i]);
                         }
-                    }
-                    fclose(bookingdetails);
-                    seatdetails = fopen(database_seat,"w");
-                    fprintf(seatdetails,"%d",totalseats);
-                    fclose(seatdetails);
+                        printf("\t\tEnter Number of seats to be booked : ");
+                        scanf("%d",&number_of_seats);
 
-                    checkpoint = 1;
-                    system("cls || clear");
-                    bus_layout(choice_busnumber);
-                    printf("\n\n\t\t***********************************************************************\n");
-                    printf("\t\t                 TOTAL COST FOR THE %2d TICKETS is %5d                     \n",number_of_seats,number_of_seats*1000);
-                    printf("\t\t***********************************************************************\n");
+
+                        for(int i = 0; i < number_of_seats; i++){
+                            printf("\t\tPassenger [%d]\n",i+1);
+                            do{
+                                validation = 0;
+                                printf("\t\tSEAT : ");
+                                scanf("%d",&temp_seat);
+                                for(int i = 0; i < 20; i++){
+                                    if(temp_seat == array_passenger_seat[i]){
+                                        printf("\t\tWe regret but the seat is not EMPTY/VACANT...\n");
+                                        validation = 1;
+                                    }
+                                }
+                            }while(validation == 1);
+
+                            printf("\t\tNAME : ");
+                            scanf("%s",temp_name);
+
+
+                            array_passenger_seat[temp_seat] = temp_seat;
+                            strcpy(array_passenger_name[temp_seat],temp_name);
+                            totalseats = totalseats - 1;
+                        }
+                        bookingdetails = fopen(database_passenger,"w");
+                        for(int i = 0; i < 20;i++){
+                            if(array_passenger_seat[i] != NULL && array_passenger_name[i] != NULL){
+                                fprintf(bookingdetails,"%d %s\n",array_passenger_seat[i],array_passenger_name[i]);
+                            }
+                        }
+                        fclose(bookingdetails);
+                        seatdetails = fopen(database_seat,"w");
+                        fprintf(seatdetails,"%d",totalseats);
+                        fclose(seatdetails);
+
+                        checkpoint = 1;
+                        system("cls || clear");
+                        bus_layout(choice_busnumber);
+                        printf("\n\n\t\t***********************************************************************\n");
+                        printf("\t\t                 TOTAL COST FOR THE %2d TICKETS is %5d                     \n",number_of_seats,number_of_seats*1000);
+                        printf("\t\t***********************************************************************\n");
+                    }else{
+                        printf("\t\tSorry but the time has passed for booking and the bus after reaching its destination\n\t\twill be cleared from schedule List...\n\t\t(Press any key)...");
+                        checkpoint = 1;
+                        getch();
+                        printf("\n");
+                    }
             }else{
-                printf("\t\tSorry but the Date has passed for booking and the bus after reaching its destination will be cleared from the list...\n");
+                printf("\n\t\tSorry but the Date has passed for booking and the bus after reaching its destination\n\t\twill be cleared from the Schedule list...\n\t\t(Press any Key)");
+                checkpoint = 1;
+                getch();
+                printf("\n");
             }
         }
     }
     if(checkpoint != 1){
-        printf("\t\tBUS NOT FOUND WITH THAT BUS NUMBER...(Press any Key)\n");
+        printf("\n\t\tBUS NOT FOUND WITH THAT BUS NUMBER...(Press any Key)\n");
         getch();
     }
     }else{

@@ -50,8 +50,6 @@ void admin(){
         {
             system("cls || clear");
             busbooking();
-            printf("Press any key to continue...");
-            getch();
             admin();
             break;
         }
@@ -136,7 +134,8 @@ void register_bus(){
     DATE times[100];
     TIME times_hms[100];
 
-    static int istruedate = 0;
+    int istruedate = 0;
+    int istruetime = 0;
 
     printf("\t\t*****************************************************************************\n");
     printf("\t\t                             BUS REGISTRATION                             \n");
@@ -189,10 +188,14 @@ void register_bus(){
                 printf("\t\tSeconds  : ");
                 scanf("%d",&timing_hms.second);
 
+                istruetime = time_validation(timing_hms.hour,timing_hms.minute,timing_hms.second);
+
                 if((timing_hms.hour < 0 && timing_hms.hour > 24) || (timing_hms.minute < 0 || timing_hms.minute > 60) || (timing_hms.second < 0 || timing_hms.second > 61 )){
                     printf("\t\tINVALID TIMING\n");
-                   }
-            }while((timing_hms.hour < 0 && timing_hms.hour > 24) || (timing_hms.minute < 0 || timing_hms.minute > 60) || (timing_hms.second < 0 || timing_hms.second > 61 ));
+                }else if(istruetime != 1){
+                    printf("Past time is not available");
+                }
+            }while((timing_hms.hour < 0 && timing_hms.hour > 24) || (timing_hms.minute < 0 || timing_hms.minute > 60) || (timing_hms.second < 0 || timing_hms.second > 61 ) || istruetime != 1);
 
             fprintf(busregister,"%s %s %s %s %d %d %d %d %d %d\n",register_busnumber,register_busname,from,to,timing.day,timing.month,timing.year,timing_hms.hour,timing_hms.minute,timing_hms.second);
         }

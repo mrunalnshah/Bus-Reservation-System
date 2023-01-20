@@ -38,9 +38,7 @@ void busstatus(){
         scanf("%s",status_busnumber);
         bus_layout(status_busnumber);
     }else{
-        printf("\t\tNO BUS HAS BEEN REGISTERED YET...(Press any Key)");
-        getch();
-        printf("\n");
+        printf("\t\tNO BUS HAS BEEN REGISTERED YET...\n");
     }
 }
 
