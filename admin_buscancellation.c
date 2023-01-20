@@ -149,11 +149,10 @@ void admin_buscancellation(){
                         printf("\n\t\tPress any key to continue...\n");
                         getch();
                     }else{
-                        printf("Time has passed...\n");
-                        checkpoint = 1;
-                    }
+                        printf("\t\tTIme has Passed...\n");
+                      }
                 }else{
-                    printf("Date has passed...\n");
+                    printf("\t\tDate has passed...\n");
                     checkpoint = 1;
                 }
             }

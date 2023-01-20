@@ -89,65 +89,59 @@ void buscancellation(){
             if(strcmp(choice_busnumber,busnumber_read) == 0){
                 date_verify = date_validation(timing.day,timing.month,timing.year);
                 if(date_verify == 1){
-                    time_verify = time_validation(timing_hms.hour,timing_hms.minute,timing_hms.second);
-                    if(time_verify == 1){
-                        bus_layout(choice_busnumber);
-                        strcat(filename_seats,busnumber_read);
-                        strcat(filename_seats,".txt");
-                        strcat(database_seat,filename_seats);
-                        strcat(filename_passenger,busnumber_read);
-                        strcat(filename_passenger,".txt");
-                        strcat(database_passenger,filename_passenger);
+                    bus_layout(choice_busnumber);
+                    strcat(filename_seats,busnumber_read);
+                    strcat(filename_seats,".txt");
+                    strcat(database_seat,filename_seats);
+                    strcat(filename_passenger,busnumber_read);
+                    strcat(filename_passenger,".txt");
+                    strcat(database_passenger,filename_passenger);
 
-                        seatdetails = fopen(database_seat,"r");
-                        if(seatdetails != NULL){
-                            fscanf(seatdetails,"%d",&totalseats);
-                        }
-                        fclose(seatdetails);
-                        bookingdetails = fopen(database_passenger,"r");
-                        if(bookingdetails != NULL){
-                            while(fscanf(bookingdetails,"%d %s",&temp_seatnumber,temp_seatname) == 2){
-                                array_seatnumbers[temp_seatnumber] = temp_seatnumber;
-                                strcpy(array_seatnames[temp_seatnumber],temp_seatname);
-                            }
-                        }
-
-                        printf("\t\tEnter the Seat number you want to cancel : ");
-                        scanf("%d",&seat_cancel);
-
-                        if(array_seatnumbers[seat_cancel] != NULL){
-                            array_seatnumbers[seat_cancel] = NULL;
-                            strcpy(array_seatnames[seat_cancel],"");
-                            totalseats = totalseats + 1;
-                            refund_amount = refund_amount + 1000;
-                        }else{
-                            printf("\t\tThe seat is already EMPTY/VACANT. \n");
-                        }
-                        bookingdetails = fopen(database_passenger,"w");
-                        for(int i = 0; i < 20;i++){
-                            if(array_seatnumbers[i] != NULL){
-                                fprintf(bookingdetails,"%d %s\n",array_seatnumbers[i],array_seatnames[i]);
-                            }
-                        }
-                        fclose(bookingdetails);
-
-                        seatdetails = fopen(database_seat,"w");
-                        fprintf(seatdetails,"%d",totalseats);
-                        fclose(seatdetails);
-
-                        checkpoint = 1;
-
-                        system("cls || clear");
-                        bus_layout(choice_busnumber);
-                        printf("\t\t***************************************************\n");
-                        printf("\t\t            REFUND OF AMOUNT %5d IS INITIATED      \n ",refund_amount);
-                        printf("\t\t***************************************************\n");
-                        printf("\n\t\tPress any key to continue...\n");
-                        getch();
-                    }else{
-                        printf("Time has passed...\n");
-                        checkpoint = 1;
+                    seatdetails = fopen(database_seat,"r");
+                    if(seatdetails != NULL){
+                        fscanf(seatdetails,"%d",&totalseats);
                     }
+                    fclose(seatdetails);
+                    bookingdetails = fopen(database_passenger,"r");
+                    if(bookingdetails != NULL){
+                        while(fscanf(bookingdetails,"%d %s",&temp_seatnumber,temp_seatname) == 2){
+                            array_seatnumbers[temp_seatnumber] = temp_seatnumber;
+                            strcpy(array_seatnames[temp_seatnumber],temp_seatname);
+                        }
+                    }
+
+                    printf("\t\tEnter the Seat number you want to cancel : ");
+                    scanf("%d",&seat_cancel);
+
+                    if(array_seatnumbers[seat_cancel] != NULL){
+                        array_seatnumbers[seat_cancel] = NULL;
+                        strcpy(array_seatnames[seat_cancel],"");
+                        totalseats = totalseats + 1;
+                        refund_amount = refund_amount + 1000;
+                    }else{
+                        printf("\t\tThe seat is already EMPTY/VACANT. \n");
+                    }
+                    bookingdetails = fopen(database_passenger,"w");
+                    for(int i = 0; i < 20;i++){
+                        if(array_seatnumbers[i] != NULL){
+                            fprintf(bookingdetails,"%d %s\n",array_seatnumbers[i],array_seatnames[i]);
+                        }
+                    }
+                    fclose(bookingdetails);
+
+                    seatdetails = fopen(database_seat,"w");
+                    fprintf(seatdetails,"%d",totalseats);
+                    fclose(seatdetails);
+
+                    checkpoint = 1;
+
+                    system("cls || clear");
+                    bus_layout(choice_busnumber);
+                    printf("\t\t***************************************************\n");
+                    printf("\t\t            REFUND OF AMOUNT %5d IS INITIATED      \n ",refund_amount);
+                    printf("\t\t***************************************************\n");
+                    printf("\n\t\tPress any key to continue...\n");
+                    getch();
                 }else{
                     printf("Date has passed...\n");
                     checkpoint = 1;
