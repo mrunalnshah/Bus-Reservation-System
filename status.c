@@ -82,6 +82,8 @@ void bus_layout(char busnumber[]){
     char database_passenger[100] = "database/";
 
     int checkpoint = 0;
+    int isdatetrue = 0;
+    int istimetrue = 0;
 
     busdetails = fopen("database/busdetails.txt","r");
 
@@ -107,6 +109,7 @@ void bus_layout(char busnumber[]){
                     strcpy(array_names[temp_seat-1],temp_name);
                 }
             }
+
 //DESIGN LAYOUT
             printf("\t\t************************************************************\n");
             printf("\t\t                            STATUS                          \n");
@@ -116,7 +119,18 @@ void bus_layout(char busnumber[]){
             printf("\t\tTIME OF DEPARTURE                     CURRENT TIME          \n");
             printf("\t\t%2d / %2d / %2d                          %2d / %2d / %2d           \n\n",timing_hms.hour,timing_hms.minute,timing_hms.second,tm.tm_hour,tm.tm_min,tm.tm_sec);
 
-            printf("\t\t                    STATUS FOR THE BUS %s                   \n\n",busnumber);
+            printf("\t\t                    STATUS FOR THE BUS %s:                   \n",busnumber);
+            isdatetrue = date_validation(timing.day,timing.month,timing.year);
+            if(isdatetrue == 1){
+                istimetrue = time_validation(timing_hms.hour,timing_hms.minute,timing_hms.second);
+                if(istimetrue == 1){
+                        printf("\t\t\t\t\tBOOKING GOING ON....\n\n");
+                }else{
+                    printf("\t\t\t\t\tBUS IS ON THE WAY...\n\n");
+                }
+            }else{
+                printf("\t\t\t\t\tBUS IS ON THE WAY\n\n");
+            }
             for(int i = 0; i < 20; i++){
                 if(array_seats[i] == NULL){
                     strcpy(array_names[i],"EMPTY");
