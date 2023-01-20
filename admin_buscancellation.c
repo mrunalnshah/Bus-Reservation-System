@@ -150,9 +150,11 @@ void admin_buscancellation(){
                         getch();
                     }else{
                         printf("Time has passed...\n");
+                        checkpoint = 1;
                     }
                 }else{
                     printf("Date has passed...\n");
+                    checkpoint = 1;
                 }
             }
         }
