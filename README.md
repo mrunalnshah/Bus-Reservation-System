@@ -102,3 +102,25 @@ Code::Blocks -
 
 Linux :
     (under development)
+    
+    
+
+## Data Types for major code
+
+- For Login
+
+        1. username is string which is char array.
+        2. password is string which is char array.
+
+- Bus Number and Bus Name
+
+        1. Bus Number is taken as string which is char array.
+           Here integer can be taken but i thought bus number 
+           can be 91015A or 9B so...
+        2. Bus Name is always a string. 
+
+- Date and Time
+
+        1. day,month and year are taken integer data types.
+        2. hour,minute and second are taken integer data types.
+        
