@@ -1,5 +1,5 @@
 
-## Appendix 
+## Content 
     
     1. Username and Password
     2. Bus Reservation System (Basic Idea)
