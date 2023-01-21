@@ -124,3 +124,141 @@ Linux :
         1. day,month and year are taken integer data types.
         2. hour,minute and second are taken integer data types.
         
+
+## Function Protoypes
+
+- admin.c
+
+    ```
+    1. void admin();
+        ask the user to input digit and based on input 
+        the switch cases work.
+    2. void register_bus();
+        it is for the bus registration or adding bus details 
+        to the busdetails.txt so that the bus can be registered 
+        otherwise user cannot book for any bus otherthan the 
+        admin registered bus
+    3. void register_user(); 
+        The function helps to register new username and 
+        password which can be used to login as the user. 
+        any username doesnot work only registered username
+        works for valid login.
+    ```
+- admin_cancellation.c
+    ```
+    1. void admin_buscancellation();
+        it fetch the data of passengers and seat from the filename 
+        based on the respective busnumber and stores them in array. 
+        ask the user to cancel number of seats and puts in loop to 
+        cancel each seat if occupied and store them into array if not 
+        occupied then prints EMPTY Already and no changes to the array.
+        at last it runs a loop to overwrite and print all the data 
+        from array to filename based on busnumber.
+
+    ```
+- cancellation.c
+
+    ```
+    1. buscancellation();
+        it fetch the data of passengers and seat from the 
+        filename based on the respective busnumber and stores 
+        them in array. ask the user to cancel one seat if 
+        occupied and store them into array if not occupied then 
+        prints EMPTY Already and no changes to the array. at last
+        it runs a loop to overwrite and print all the data from
+        array to filename based on busnumber.
+    ```
+- busavailability.c
+
+    ```
+    1. busavailability();
+        fetch data from the database file name busdetails.txt 
+        and prints the data of the bus schedule as a whole.
+    ```
+- busbooking.c
+
+    ```
+    1. busbooking();
+        fetch the data from the respected filename based on 
+        busnumber if available else it ask user to input number
+        of seats to be booked and ask if the seat is occupied or 
+        not if yes than the user is asked again else the system 
+        ask to input name and then store all that in an array.
+        after the number of seats are booked the loop runs to print 
+        all the data in the file while formatting the previous data.
+    ```
+
+- choice.c
+    ```
+    1. choice();
+        ask user to input a digit and based on digit the 
+        switch cases are implemented.
+    ```
+
+- design.c
+
+    ```
+    1. void start_screen();
+        designs used in different modules.
+    2. void end_screen();
+        designs used in different modules.
+    3. void creator_details();
+        designs used in different modules.
+    4. void returnpage();
+        designs used in different modules.
+    5. void user_welcome();
+        designs used in different modules.
+    6. void admin_welcome();
+        designs used in different modules.
+    7. void makedir();
+        has a system function to create a folder named "database"
+        where all our files are stored.
+    ```
+- login.c
+
+    ```
+    1. int login(); 
+        contains both input function and validate function
+        and returns value as per the returns
+    2. void input_login();
+        takes input for username and password and store it in 
+        global variable
+    3. int validate_login();
+        takes the value of global variable and validates it
+        with other first admin then fetch username, password data
+        from the file name "userdetails.txt" and validate and returns
+        0 for invalid input, 1 for user validation and 
+        2 for admin validation.
+    ```
+
+- main.c
+
+    ```
+       main();
+        contains all the defined functions in other .c files
+    ```
+
+- status.c
+
+    ```
+    1. void busstatus();
+        it checks it filename for the respective busnumber 
+        if available if yes than it calls the bus_layout 
+        function.
+    2. void bus_layout(char busnumber[]);
+        it takes the input of busnumber and prints all the 
+        fetched data for the bus. if there is no file created 
+        for it then it prints EMPTY for all seats and 
+        totalseats = 20.
+    ```
+
+- time_validation.c
+
+    ```
+    1. int date_validation(int day,int month,int year);
+        it takes parameter of the day,month and year you want to 
+        compare with the current date
+    2. int time_validation(int hour,int minute,int second);
+        it takes the input of hour,minute and second you want to 
+        compare with the current time.
+    ```
