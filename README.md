@@ -261,3 +261,50 @@ Linux :
         it takes the input of hour,minute and second you want to 
         compare with the current time.
     ```
+
+## Important Code Snippet
+
+1.
+```
+while(fscanf(fptr,"%format_specifer1,%format_specifer2,...,%format_specifern",&val1,&val2,val3,...valn) == n){
+    //do something
+}
+```
+THE ABOVE CODE FETCH DATA FROM THE FILE AS A SEQUENCE OF n.
+
+Example : 
+
+    FILE CONTAINS : 
+    1 Mrunal 
+    2 Shah
+    3 Albion
+```
+
+while(scanf(fptr,"%d %s",&num,string) == 2){
+    int_variable[num] = num; 
+    // on index of num int_variable stores num.
+    strcpy(char_variable[num],string); 
+    // on index of num char_variable stores string.
+}
+/*
+If the file has like
+1 Mrunal
+2 
+
+the program stores only 1 on index 1 and Mrunal on index 1.
+as 2 is only number without string, it doesnot satisfy 
+(== 2) in Code.
+
+This code can be used to fetch data from file accurately and
+store them in array and do changes in array and overwrite the
+file with "fprintf".
+*/
+```
+
+2.
+
+```
+
+```
+
+
