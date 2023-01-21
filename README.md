@@ -1,14 +1,27 @@
 
 ## Appendix 
+    
+    1. Username and Password
+    2. Bus Reservation System (Basic Idea)
+    3. Installation and System
+    4. Data Types Used for the major and why?
+    5. Function prototypes
+    6. Working of each Function. how ? why ?
+    7. Important Code Snippets for the code Author.
+    8. Introduction about the Author.
+    9. Thanks
+    
+    
 
-    1. Bus Reservation System (Basic Idea)
-    2. Installation and System
-    3. Data Types Used for the major and why?
-    4. Function prototypes
-    5. Working of each Function. how ? why ?
-    6. Important Code Snippets for the code Author.
-    7. Introduction about the Author.
-    8. Thanks
+## Username and Password
+
+for the first time you need to login as admin as i have not defined the username and password except Admin.
+
+```
+Username : admin
+Password : admin
+```
+After you login as admin you can register users and register buses as a plus other than user login benefits
 
 # Bus Reservation System
 A bus reservation system is a console application made by Mrunal N. Shah to reserve bus tickets.
@@ -55,6 +68,18 @@ Date and Time Validation is done with the bus timing(input during admin register
 
 
 ## Installation
+
+For the first time you have to use :
+
+``` 
+Username : admin
+
+password : admin 
+
+```
+
+and create as many username you want and register as many bus
+you want.
 
 Windows : 
 
