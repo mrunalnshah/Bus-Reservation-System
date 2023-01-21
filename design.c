@@ -63,7 +63,7 @@ void creator_details(){
     printf("\t\t*              MADE BY MRUNAL NIRAJKUMAR SHAH           *\n");
     printf("\t\t*       \"https://www.linkedin.com/in/mrunalnshah/\"      *\n");
     printf("\t\t*       \"https://github.com/mrunalnshah\"                *\n");
-    printf("\t\t*       \"Email : \"mrunalnshah@protonmail.com\"\"                *\n");
+    printf("\t\t*       \"Email : \"mrunalnshah@protonmail.com\"\"          *\n");
     printf("\t\t*********************************************************\n\n");
     printf("\n\n\t\tIf you see any bugs or any need of improvement \n\t\tI would be happy to implement it as soon as possible \n\t\tor if you want to learn something about/in the code,\n\t\tcontact me on above links!!!\n");
 
