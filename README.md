@@ -308,3 +308,14 @@ file with "fprintf".
 ```
 
 
+
+## 🚀 About Me
+
+As an AI and Machine Learning student, I am constantly seeking to expand my knowledge and skills in the field of technology. However, I do not limit myself to one specific domain or technology. I am passionate about mathematics and love applying it to solve complex problems. I also enjoy competitive programming as it allows me to test my skills and knowledge against others in the field. My love for coding and logical thinking is matched by my love for reading books, which I believe helps me to think critically and creatively.
+
+I am a person who is always eager to learn and explore new possibilities. My dedication to my studies is evident in my love for spending hours on my laptop each day. I am not only passionate about AI and ML, but also about technology in general. I am always interested in the latest developments and advancements in this field. This makes me a well-rounded individual who is always looking to learn something new.
+
+I am a person who is not afraid to take on new challenges and is always willing to put in the hard work to achieve my goals. I believe that the ability to continuously learn and adapt is essential in today's world, and I am always working towards becoming a better version of myself.
+
+In my free time, I enjoy playing games and doing creative work. I also love listening to music and reading books, which helps me to relax and recharge. I am a person who is constantly looking to improve myself and explore new opportunities. I am confident that my passion for technology, mathematics, and continuous learning will help me to make a positive impact in the field of AI and Machine Learning.
+
