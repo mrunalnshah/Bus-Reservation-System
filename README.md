@@ -270,7 +270,7 @@ while(fscanf(fptr,"%format_specifer1,%format_specifer2,...,%format_specifern",&v
     //do something
 }
 ```
-THE ABOVE CODE FETCH DATA FROM THE FILE AS A SEQUENCE OF n.
+THE ABOVE CODE FETCH DATA FROM THE FILE AS A SEQUENCE OF n.The code takes n datas at a time and stores in the variables mentioned. if the data are less than n or more than n then the program will run as follows. less than n never runs, more than n runs till n and then check if another n sequence is there if not then the loop ends. see the example below.
 
 Example : 
 
