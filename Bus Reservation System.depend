@@ -111,7 +111,7 @@
 
 1674014705 c:\mrunal shah\projects\bus reservation system\choicefunction.h
 
-1674191658 source:c:\mrunal shah\projects\bus reservation system\admin_buscancellation.c
+1674235215 source:c:\mrunal shah\projects\bus reservation system\admin_buscancellation.c
 	<stdio.h>
 	<string.h>
 	<time.h>
@@ -119,7 +119,7 @@
 	"busfunction.h"
 	"designfunction.h"
 
-1674191641 source:c:\mrunal shah\projects\bus reservation system\busavailability.c
+1674266754 source:c:\mrunal shah\projects\bus reservation system\busavailability.c
 	<stdio.h>
 	<string.h>
 	<stdlib.h>

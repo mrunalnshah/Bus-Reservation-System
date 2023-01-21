@@ -180,7 +180,7 @@ void register_bus(){
                 }
             }while((timing.day < 1 && timing.day > 31) || (timing.month < 1 || timing.month > 12) || (timing.year < (tm.tm_year + 1900)) || (istruedate != 1) );
             do{
-                printf("\t\tIME   \n ");
+                printf("\t\tTIME IN 24 HOURS  \n ");
                 printf("\t\tHours   : ");
                 scanf("%d",&timing_hms.hour);
                 printf("\t\tMinutes :");
@@ -248,7 +248,7 @@ void register_bus(){
                 }
             }while((times[initial].day < 1 && times[initial].day > 31) || (times[initial].month < 1 || times[initial].month > 12) || (times[initial].year < 2023) || (istruedate != 1) );
             do{
-                printf("\t\tIME   \n ");
+                printf("\t\t TIME IN 24 Hours Format   \n ");
                 printf("\t\tHours   : ");
                 scanf("%d",&times_hms[initial].hour);
                 printf("\t\tMinutes :");

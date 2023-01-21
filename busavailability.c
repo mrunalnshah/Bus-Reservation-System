@@ -48,7 +48,7 @@ void busavailability(){
     if(busdetails != NULL){
         while(fscanf(busdetails,"%s %s %s %s %d %d %d %d %d %d",register_busnumber,register_busname,from,to,&timing.day,&timing.month,&timing.year,&timing_hms.hour,&timing_hms.minute,&timing_hms.second) == 10){
             printf("\t\t[%d] %0.20s\n",initial,register_busname);
-            printf("\t\t\tBUS NUMBER : %2.8s\n\t\t\tBUS NAME : %0.20s\n\t\t\tDEPATURE : %0.10s \t DESTINATION : %0.10s\n\t\t\tDeparture Date : %2d / %2d / %2d\n\t\t\tDeparture Time : %2d:%2d:%2d\n",register_busnumber,register_busname,from,to,timing.day,timing.month,timing.year,timing_hms.hour,timing_hms.minute,timing_hms.second);
+            printf("\t\t\tBUS NUMBER : %2.8s\n\t\t\tBUS NAME : %0.20s\n\t\t\tDEPATURE : %0.10s \t DESTINATION : %0.10s\n\t\t\tDeparture Date : %02d / %02d / %4d\n\t\t\tDeparture Time : %02d:%02d:%02d\n",register_busnumber,register_busname,from,to,timing.day,timing.month,timing.year,timing_hms.hour,timing_hms.minute,timing_hms.second);
             initial++;
         }
     }else{
