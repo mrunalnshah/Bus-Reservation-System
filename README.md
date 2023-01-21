@@ -5,11 +5,10 @@
     2. Bus Reservation System (Basic Idea)
     3. Installation and System
     4. Data Types Used for the major and why?
-    5. Function prototypes
-    6. Working of each Function. how ? why ?
-    7. Important Code Snippets for the code Author.
-    8. Introduction about the Author.
-    9. Thanks
+    5. Function prototypes and Working of each Function. how ? why ?
+    6. Important Code Snippets for the code Author.
+    7. Introduction about the Author.
+    8. Thanks
     
     
 
