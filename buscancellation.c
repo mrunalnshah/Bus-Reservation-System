@@ -119,7 +119,9 @@ void buscancellation(){
                         totalseats = totalseats + 1;
                         refund_amount = refund_amount + 1000;
                     }else{
-                        printf("\t\tThe seat is already EMPTY/VACANT. \n");
+                        printf("\t\tThe seat is already EMPTY/VACANT.(Press any key...)");
+                        getch();
+                        printf("\n");
                     }
                     bookingdetails = fopen(database_passenger,"w");
                     for(int i = 0; i < 20;i++){
