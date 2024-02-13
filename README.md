@@ -99,11 +99,6 @@ Windows :
 Code::Blocks -
     https://www.codeblocks.org/downloads/ 
 
-Linux :
-    (under development)
-    
-    
-
 ## Data Types for major code
 
 - For Login
@@ -304,12 +299,6 @@ This code can be used to fetch data from file accurately and
 store them in array and do changes in array and overwrite the
 file with "fprintf".
 */
-```
-
-2.
-
-```
-
 ```
 
 
