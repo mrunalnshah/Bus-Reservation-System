@@ -98,10 +98,6 @@ Windows :
 
 Code::Blocks -
     https://www.codeblocks.org/downloads/ 
-
-Linux :
-    (under development)
-    
     
 
 ## Data Types for major code
@@ -305,14 +301,6 @@ store them in array and do changes in array and overwrite the
 file with "fprintf".
 */
 ```
-
-2.
-
-```
-
-```
-
-
 
 ## 🚀 About Me
 I am Mrunal Nirajkumar Shah.
