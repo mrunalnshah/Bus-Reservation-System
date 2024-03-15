@@ -87,7 +87,7 @@ Windows :
     3. Read the code or Compile the code and run the code.
     4. Learn the code and maybe go through my Important 
        Code Snippet Section for the fast grasp of the code. 
-       (currently under development)
+
 
 Windows : 
     
