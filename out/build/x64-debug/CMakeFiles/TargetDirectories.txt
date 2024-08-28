@@ -1,0 +1,3 @@
+C:/Users/mruna/Desktop/Bus-Reservation-System/out/build/x64-debug/CMakeFiles/Bus-Reservation-System.dir
+C:/Users/mruna/Desktop/Bus-Reservation-System/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/mruna/Desktop/Bus-Reservation-System/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
