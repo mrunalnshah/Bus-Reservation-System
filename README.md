@@ -47,3 +47,15 @@ Bus Reservation System is a C Program which has :
 
 ## Video Tutorial
 
+
+# Read the code ?
+
+1. Open bus-reservation-system.c and bus-reservation-system.h , start reading from main 
+2. Go through every file in src.
+3. Its intuitive and easy to read.
+
+# Run the code ?
+
+1. Its cmake file, please check the latest commands to compile cmake file.
+2. you can also use Visual Studio and open a exisiting folder, and run the code in visual studio ( i used VS 2022 )
+3. any compiler works, you just need to compile all files, make objs and then link them ( i dont recommend this one )
