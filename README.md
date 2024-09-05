@@ -25,7 +25,6 @@ Bus Reservation System is a C Program which has :
   1. Cross-Platform Compatible:
       * Windows ( CODED IN IT, USING VISUAL STUDIO 2022 )
       * Linux   ( YET TO CHECK )
-      * MAC     ( DONT HAVE MAC )
   2. A login system, where Users and Admins can login.
       * ADMIN LOGIN :
           * Username : admin
