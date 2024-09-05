@@ -14,8 +14,9 @@ It took me 3 cycles to write the code. 1st time i wrote, it went horrible. 2nd t
 
 maybe this code have more bugs, but trust me, its worth if you can just read it. i used so many core concepts like cross-platform comaptiblity and file handling, with pointers ( malloc ) and soo much...
 
-Thanks !
+Thanks </br>
 Mrunal Nirajkumar Shah
+
 ---
 
 
