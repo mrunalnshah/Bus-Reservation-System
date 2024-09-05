@@ -12,7 +12,7 @@ int main() {
 	clearScreen();
 
 	firstScreenDesign();
-		
+	creator_details();
 	char typeOfUser = userType();
 	if (typeOfUser == 'x') {
 		return 8;
@@ -58,6 +58,5 @@ int main() {
 		}
 	}
 	lastScreenDesign();
-
 	return 0;
 }

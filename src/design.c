@@ -80,11 +80,11 @@ void creator_details() {
     printTab(2);
     printf("*              MADE BY MRUNAL NIRAJKUMAR SHAH           *\n");
     printTab(2);
-    printf("*       \"https://www.linkedin.com/in/mrunalnshah/\"    *\n");
+    printf("*       \"https://www.linkedin.com/in/mrunalnshah/\"      *\n");
     printTab(2);
-    printf("*       \"https://github.com/mrunalnshah\"              *\n");
+    printf("*       \"https://github.com/mrunalnshah\"                *\n");
     printTab(2);
-    printf("*       \"Email : \"mrunalnshah7@gmail.com\"\"          *\n");
+    printf("*       \"Email : \"mrunalnshah7@gmail.com\"\"              *\n");
     printTab(2);
     printf("*********************************************************\n");
     printTab(2);
