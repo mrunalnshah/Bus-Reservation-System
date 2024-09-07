@@ -5,7 +5,7 @@
 
   [![Website Badge](https://img.shields.io/badge/-mrunalnshah-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://verma-anushka.github.io/anushkaverma/)](https://mrunalnshah.github.io) 
   [![Linkedin Badge](https://img.shields.io/badge/-mrunalnshah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anushkaverma/)](https://www.linkedin.com/in/mrunalnshah/) 
-  [![Gmail Badge](https://img.shields.io/badge/-mrunalnshah-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mrunalnshah2883@gmail.com)](mailto:mrunalnshah2883@gmail.com)
+  [![Gmail Badge](https://img.shields.io/badge/-mrunalnshah-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mrunalnshah2883@gmail.com)](mailto:mrunalnshah7@gmail.com)
 
    </div>
    
@@ -228,5 +228,5 @@ mrunalnshah.
 
   [![Website Badge](https://img.shields.io/badge/-mrunalnshah-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://verma-anushka.github.io/anushkaverma/)](https://mrunalnshah.github.io) 
   [![Linkedin Badge](https://img.shields.io/badge/-mrunalnshah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anushkaverma/)](https://www.linkedin.com/in/mrunalnshah/) 
-  [![Gmail Badge](https://img.shields.io/badge/-mrunalnshah-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mrunalnshah2883@gmail.com)](mailto:mrunalnshah2883@gmail.com)
+  [![Gmail Badge](https://img.shields.io/badge/-mrunalnshah-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mrunalnshah2883@gmail.com)](mailto:mrunalnshah7@gmail.com)
 </div>
