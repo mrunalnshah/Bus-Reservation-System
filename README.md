@@ -43,44 +43,166 @@ Bus Reservation System is a C Program which has :
   14. User friendly readable code.
 
 ## ScreenShots
-<div align="center">
-    <table>
-      <tr> 
-        <th>
-          Images
-        </th> 
-        <th>
-          Description
-        </th>
-      </tr>
-      <tr>
-        <td>
-          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
-        </td>
-        <td>
-          Welcome Page
-        </td>
-      </tr>
-      <tr>
-        <td>
-          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
-        </td>
-        <td>
-          Welcome Page
-        </td>
-      </tr>
-      <tr>
-        <td>
-          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
-        </td>
-        <td>
-          Welcome Page
-        </td>
-      </tr>
-    </table>
-</div>
-## Video Tutorial
+<table>
+  <tr>
+   <td> Images </td>
+   <td> Description </td>  
+ </tr>
 
+ <tr>
+  <td> 
+
+  ![image](https://github.com/user-attachments/assets/f450730c-f93b-4a6a-9119-32daefd51b5a)
+
+  
+  </td>
+
+  <td>
+
+  Welcome Page
+   
+  </td>
+ </tr>
+
+ <tr>
+   <td>
+    
+  ![image](https://github.com/user-attachments/assets/923c747d-e027-432d-9a27-d99615632fae)
+
+    
+   </td>
+
+   <td>
+    
+  Creator Information
+
+   </td>
+ </tr>
+ 
+
+ <tr>
+   <td>
+    
+  ![image](https://github.com/user-attachments/assets/bfefcc08-793f-4e47-b3ce-c7e73984dfde)
+    
+   </td>
+   <td>
+
+  Select User Type or Register
+  
+   </td>
+ </tr>
+
+<tr>
+ <td>
+  
+![image](https://github.com/user-attachments/assets/37b6f2c2-5f8b-4e15-9aeb-e3090e662d37)
+  
+ </td>
+ <td>
+
+  Login and Register looks same, register has a password confirmation.
+  
+ </td>
+</tr>
+
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/19bc8b0f-de40-4203-a3b9-b7c25f66f342)
+
+  
+ </td>
+ <td>
+
+  Bus Journey Registration
+ 
+ </td>
+</tr>
+
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/17e00812-bebd-4476-b324-96ce030eac12)
+
+  
+ </td>
+ <td>
+
+  Bus Information
+ 
+ </td>
+</tr>
+<tr>
+ <td> 
+
+ ![image](https://github.com/user-attachments/assets/983b4cbc-a6bb-4093-8dea-121930b45b8c)
+
+  
+ </td>
+ <td>
+
+  Seat Arrangement
+ 
+ </td>
+</tr>
+
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/3bb22931-1b40-481e-965f-f9cb393d212f)
+
+  
+ </td>
+ <td>
+
+Bus Ticket Booking
+
+ </td>
+</tr>
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/912cb24d-4e83-4f5f-8350-1dc8e969f6f4)
+
+  
+ </td>
+ <td>
+
+Seat Arrangement after Booking Tickets
+
+ </td>
+</tr>
+
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/774ac8ca-69ff-43c6-a15e-1c1f764fbad3)
+
+  
+ </td>
+ <td>
+
+Cancel Ticket/Cancel Bus - This is cancel ticket interface.
+
+ </td>
+</tr>
+
+<tr>
+ <td> 
+
+![image](https://github.com/user-attachments/assets/9856566d-ea37-4164-b5cb-6880c87f76ae)
+
+  
+ </td>
+ <td>
+
+Error Messages are everywhere.
+
+ </td>
+</tr>
+
+</table>
 
 # Read the code ?
 
@@ -93,3 +215,18 @@ Bus Reservation System is a C Program which has :
 1. Its cmake file, please check the latest commands to compile cmake file. cmake, then make and run the executable file.
 2. you can also use Visual Studio and open a exisiting folder, and run the code in visual studio ( i used VS 2022 )
 3. any compiler works, you just need to compile all files, make objs and then link them ( i dont recommend this one )
+
+---
+
+Thank you. </br>
+mrunalnshah.
+
+---
+
+
+<div align="center">
+
+  [![Website Badge](https://img.shields.io/badge/-mrunalnshah-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://verma-anushka.github.io/anushkaverma/)](https://mrunalnshah.github.io) 
+  [![Linkedin Badge](https://img.shields.io/badge/-mrunalnshah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/anushkaverma/)](https://www.linkedin.com/in/mrunalnshah/) 
+  [![Gmail Badge](https://img.shields.io/badge/-mrunalnshah-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mrunalnshah2883@gmail.com)](mailto:mrunalnshah2883@gmail.com)
+</div>
