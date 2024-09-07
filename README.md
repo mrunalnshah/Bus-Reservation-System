@@ -22,9 +22,9 @@ Mrunal Nirajkumar Shah
 
 A C based project ,
 Bus Reservation System is a C Program which has :
-  1. Cross-Platform Compatible:
-      * Windows ( CODED IN IT, USING VISUAL STUDIO 2022 )
-      * Linux   ( YET TO CHECK )
+  1. Windows Compatible:
+      * Windows ( CODED IN IT, USING VISUAL STUDIO 2022 ) { Build for windows only }
+      * Linux ( Needs minor changes like coding itoa function, alternative of conio, and some basic changes ) 
   2. A login system, where Users and Admins can login.
       * ADMIN LOGIN :
           * Username : admin
@@ -43,7 +43,42 @@ Bus Reservation System is a C Program which has :
   14. User friendly readable code.
 
 ## ScreenShots
-
+<div align="center">
+    <table>
+      <tr> 
+        <th>
+          Images
+        </th> 
+        <th>
+          Description
+        </th>
+      </tr>
+      <tr>
+        <td>
+          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
+        </td>
+        <td>
+          Welcome Page
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
+        </td>
+        <td>
+          Welcome Page
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ![image](https://github.com/user-attachments/assets/d24ae1cf-3064-48c9-90ad-7e8dfdef743c)
+        </td>
+        <td>
+          Welcome Page
+        </td>
+      </tr>
+    </table>
+</div>
 ## Video Tutorial
 
 
@@ -55,6 +90,6 @@ Bus Reservation System is a C Program which has :
 
 # Run the code ?
 
-1. Its cmake file, please check the latest commands to compile cmake file.
+1. Its cmake file, please check the latest commands to compile cmake file. cmake, then make and run the executable file.
 2. you can also use Visual Studio and open a exisiting folder, and run the code in visual studio ( i used VS 2022 )
 3. any compiler works, you just need to compile all files, make objs and then link them ( i dont recommend this one )
